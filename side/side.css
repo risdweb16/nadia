@@ -1,0 +1,399 @@
+html, body {
+ 
+    
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 11%, rgba(255,247,251,1) 22%, rgba(255,232,219,1) 34%, rgba(255,251,209,1) 49%, rgba(224,255,237,1) 66%, rgba(196,216,255,1) 83%, rgba(214,182,250,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(1%, rgba(255,255,255,1)), color-stop(11%, rgba(255,255,255,1)), color-stop(22%, rgba(255,247,251,1)), color-stop(34%, rgba(255,232,219,1)), color-stop(49%, rgba(255,251,209,1)), color-stop(66%, rgba(224,255,237,1)), color-stop(83%, rgba(196,216,255,1)), color-stop(100%, rgba(214,182,250,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 11%, rgba(255,247,251,1) 22%, rgba(255,232,219,1) 34%, rgba(255,251,209,1) 49%, rgba(224,255,237,1) 66%, rgba(196,216,255,1) 83%, rgba(214,182,250,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 11%, rgba(255,247,251,1) 22%, rgba(255,232,219,1) 34%, rgba(255,251,209,1) 49%, rgba(224,255,237,1) 66%, rgba(196,216,255,1) 83%, rgba(214,182,250,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 11%, rgba(255,247,251,1) 22%, rgba(255,232,219,1) 34%, rgba(255,251,209,1) 49%, rgba(224,255,237,1) 66%, rgba(196,216,255,1) 83%, rgba(214,182,250,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 11%, rgba(255,247,251,1) 22%, rgba(255,232,219,1) 34%, rgba(255,251,209,1) 49%, rgba(224,255,237,1) 66%, rgba(196,216,255,1) 83%, rgba(214,182,250,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6b6fa', GradientType=0 );
+
+    background-repeat: no-repeat;
+    
+    margin: 0 0 0 0;
+    height: auto;
+}
+
+/*orange body*/
+#window {
+    padding: 0;
+}
+
+/*side bar*/
+
+
+
+#nav_wrap {
+    /* Width of red part not grey */
+    max-width: 200px;
+    width: 20%;
+    /* Spans the height of the page */
+    margin: 0;
+    /* Ensures there is no space between sides of the screen and the menu */
+    /* z-index: 99;  Makes sure that your menu remains on top of other page elements */
+    background-color: rgba(255,255,255, 0);
+    height: 100em;
+    position: fixed;
+    min-width: 170px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px
+}
+#navigation {
+    font-size:.8em;
+    /* width of tabs of side*/
+    width:200px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+
+}
+#navigation ul {
+    margin:0px;
+    padding:0px;
+}
+#navigation li {
+    list-style: none;
+}
+ul.top-level {
+    background:transparent;
+}
+ul.top-level li {
+    border-bottom: transparent; solid;
+    border-top: transparent; solid;
+    border-width: 4px;
+}
+#navigation a {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display:block;
+    height:25px;
+    line-height: 25px;
+    text-indent: 10px;
+    text-decoration:none;
+    width:100%;
+}
+#navigation a:hover {
+    text-decoration:none;
+    color: black;
+}
+#navigation li:hover {
+    background: transparent;
+    position: relative;
+    padding-left: 10px;
+}
+ul.sub-level {
+    display: none;
+}
+
+/*this is the border around the drop down on the side menue*/
+li:hover .sub-level {
+    background: transparent;
+    border: transparent;
+    border-width: 5px;
+    display: block;
+}
+
+
+
+/*cover picture pulse*/
+
+.button{ 
+  width:150px; 
+  padding:20px; 
+  
+ 
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.01); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1.01); }
+  70% { transform: scale(1); }
+  80% { transform: scale(1); }
+  90% { transform: scale(1.01); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation-name: pulse_animation;
+  animation-duration: 7s;
+  transform-origin:70% 70%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*social media tabs*/
+
+#media-tabs {
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+/*working on the body header*/
+
+#rightcol {
+    width: 80%;
+    background-color: transparent;
+    margin-left: 175px;
+    margin-bottom: 60px;
+
+}
+
+#right-header {
+    background-color: rgba(255,255,255, 0.01);
+    color: blue;
+   /* max-width: 700px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+#right-body {
+    background-color: transparent;
+    padding-left: 25px;
+    margin-left: 20px;
+   /* max-width: 850px;*/
+    margin-top: 0px;
+}
+
+
+/*selfie*/
+
+#nadia {
+    max-width: 900px;
+    min-width: 200px;
+    width: 90%;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    border-radius:2px;
+    margin:15px auto 25px auto;
+    text-align: center;
+}
+
+#selfie {
+    max-width: 300px;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    border-radius:10px;
+    margin:15px auto 25px auto;
+    text-align: center;
+}
+/*image gallery*/
+
+
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 23px;
+}
+
+.allme {
+    color:orange;
+    font-size: 20px;
+}
+
+.aboutme {}
+
+
+/*
+  background: linear-gradient(rgba(255,0,0,0), #444,rgba(255,0,0,0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  @media screen and (min-width:37.5em){
+    font-size: 4.75rem;
+  }
+  */
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing:5px;
+    background: linear-gradient(rgba(255,0,0,0), #444,rgba(255,0,0,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    font-size: 40px;
+    margin-top: 10px;
+    }
+
+
+p{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin:0 auto 0 auto;
+  text-align: center;
+  color:#444;
+  text-decoration: none;
+  max-width: 600px;
+  }
+
+.allme{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.allmetwo{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.haas {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.haas a:link {
+    text-decoration: none;
+}
+
+.haas a:visited {
+    color:purple;
+}
+
+.haas a:hover {
+    color: pink;
+}
+
+
+
+.crop-container {
+    width: 33%;
+    height: 33%;
+    min-width: 250px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5%;
+}
+ .crop-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border:2px solid rgba(255,255,255, 0.2);
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+ }
+
+.crop-container img:hover {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+img:hover,
+.crop-container:hover img {
+    opacity:.9;
+}
+
+
+
+
+/*logo*/
+#logo {
+    padding-left: 5px;
+  color: red;
+  width: auto;
+  max-width: 150px;
+  min-width: 60px;
+  opacity: .8;
+}
+
+#logo img{
+  margin:10px auto 5px auto;
+
+  height: auto !important;
+  transition: scale .3s;
+
+}
+
+
+
+
+
+
+
+/*web design list*/
+
+ul{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color:#444;
+  font-family: 'Fira Sans', sans-serif;
+  font-size:15px;
+}
+.accordianMenu{
+  
+    padding:0 30px 20px 30px;
+    max-width: 400px;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    border-radius:10px;
+    margin:15px auto 25px auto;
+    text-align: center;
+
+
+}
+.accordianMenu li a{
+  height:30px;
+  display:block;
+  line-height:30px;
+  border-bottom:1px solid #222;
+}
+.accordianSubMenu{
+  display:none;
+  background-color: rgba(255,255,255, 0.3);
+  overflow:hidden;
+  }
+.accordianSubMenu li a{
+  text-indent:0px;
+  text-align: left;
+}
+.submenu{
+  position:relative;
+}
+.submenu:after{
+  content:"";
+  position:absolute;
+  top:10px;
+  right:10px;
+  border-left:5px solid pink;
+  border-top:5px solid transparent;      
+  border-bottom:5px solid transparent;
+  transition:all ease-in-out 0.3s;
+}
+.submenu.current:after{
+  transform:rotate(45deg);
+  transition:all ease-in-out 0.3s;
+  border-left:5px solid #fff;
+}
+.active{}
+
+/*@media .... {
+    .crop-container {
+        width: 50%;
+    }
+}*/
+
+
+
+/*footer*/
+
+
+
+
+
+
+
